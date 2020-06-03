@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>iJustine Website</title>
+
+    <link rel="stylesheet" href="iJustine.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="MDB-Free_4.15.0/css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/95d4fe7f4a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="MDB-Free_4.15.0/css/mdb.min.css" />
+  </head>
+
+  <body style=" background-color: #85C9E9;overflow-x:hidden;">
+    <!--Add pic of youtube channel as like a banner-->
+    <!-- Add nav bar under banner  which will contain home, More about her, questionnaire, sources dropdowns-->
+    <div class="bodyContainer">
+      <div class="BannerContainer spin">
+        <img
+          src="iJustinePics/iJustineBanner.png"
+          alt="IJustine Channel Banner"
+        />
+      </div>
+      <!-- re add navbar and fix animation -->
+      <div class="NavContainer">
+        <nav class="navbar navbar-expand-lg navColor">
+          <a  class="navbar-brand" href="#">iJustine</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-angle-double-down"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link HomePad" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  More About iJustine
+                </a>
+                <div class="dropdown-color">
+                  <div id = "itemColor"
+                    class="dropdown-menu dropdown-color"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a  class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Mini Games
+                </a>
+                <div class="dropdown-color">
+                  <div id = "itemTwoColor"
+                    class="dropdown-menu dropdown-color"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Social Media
+                </a>
+                <div class="dropdown-color">
+                  <div id = "itemThreeColor"
+                    class="dropdown-menu dropdown-color"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Resources
+                </a>
+                <div class="dropdown-color">
+                  <div id = "itemFourColor"
+                    class="dropdown-menu dropdown-color"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a
+                      class="dropdown-item"
+                      href="https://youtube.fandom.com/wiki/IJustine"
+                      target="_blank"
+                      >Youtube Fandom</a
+                    >
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input id = "SearchStyle"
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button id = "ButtonOutline"
+                class="btnMain info"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <!-- Add a bio of justine -->
+      <!-- Also add image carousel under bio section -->
+      <!--A section about her social media-->
+      <!--footer containing a bunch of links-->
+      <div class="flex-containerOne  ijustineBio">
+        <h1 class="BioStyle">iJustine Bio</h1>
+        <div id="BioImageStyle">
+          <img src="iJustinePics/ijustine-bioPic.jfif" alt="ijustine Bio Pic" />
+        </div>
+        <div id="BioTextStyle">
+          <ul class="repeating-before">
+            <li>
+              Justine Ezarik (born March 20, 1984 [age 35]), better known online
+              as iJustine or IJ, is an American YouTube<br />
+              vlogger and Actor who was born in Pittsburgh, Pennsylvania. She
+              has appeared on many shows such as Law and<br />
+              Order: SVU and Criminal Minds.
+            </li>
+            <li>
+              She is the daughter of a p.e. teacher and a coal miner, She is the
+              oldest sister with Breanna being the second<br />
+              oldest sister and Jenna being the youngest teacher
+            </li>
+            <li>
+              She graduated from Pittsburgh Technical Institute in 2004 where
+              she landed several jobs in graphic design and<br />
+              video editing before she would soon start her Youtube channel on
+              May 6, 2006.
+            </li>
+            <li>
+              Ezarik appeared live on the Internet through the use of a wireless
+              webcam and microphone on her own iJustine<br />
+              lifecasting channel on Justin Kan's Justin.tv, where she began
+              transmitting her life via the Internet on May 29, 2007.
+            </li>
+            <li>
+              When the iPhone debuted in June 2007, Ezarik covered the device's
+              debut at the Mall of America in Bloomington,<br />
+              Minnesota a suburb south of Minneapolis, Minnesota.
+            </li>
+            <li>
+              In 2017, she released her first official book. In March 2019, she
+              surpassed 1,000,000,000 views on her iJustine YouTube channel. She
+              has also been nomminated for many awards such as for Best Vlogger
+              Award(Streamy's), the Choice Web Star(Teen Choice Awards) and etc.
+              But she has won an Webby Award for Web Personality/Host in 2011.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bootstrap Carousel -->
+      <div class="CarouselContainer">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="4000"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="iJustinePics/ijustine_AppleOne.jpg"
+                height="690px"
+                alt="First slide"
+              />
+              <div class="carousel-caption">
+                <h1>Carousel Template with Bootstrap 4</h1>
+                <div class="description">
+                  <p>
+                    This is a free Carousel template made with the Bootstrap 4
+                    framework. Click on the buttons below to stop / start the
+                    autoplay:
+                  </p>
+                </div>
+                <div class="pause-cycle-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-cycle disabled"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-pause"
+                  >
+                    <i class="fas fa-pause"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="iJustinePics/ijustine_PlaystationFourOne.jpg"
+                height="690px"
+                alt="Second slide"
+              />
+              <div class="carousel-caption">
+                <h1>Carousel Template with Bootstrap 4</h1>
+                <div class="description">
+                  <p>
+                    This is a free Carousel template made with the Bootstrap 4
+                    framework. Click on the buttons below to stop / start the
+                    autoplay:
+                  </p>
+                </div>
+                <div class="pause-cycle-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-cycle disabled"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-pause"
+                  >
+                    <i class="fas fa-pause"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="iJustinePics/ijustine_SamsungOne.jpg"
+                height="690px"
+                alt="Third slide"
+              />
+              <div class="carousel-caption">
+                <h1>Carousel Template with Bootstrap 4</h1>
+                <div class="description">
+                  <p>
+                    This is a free Carousel template made with the Bootstrap 4
+                    framework. Click on the buttons below to stop / start the
+                    autoplay:
+                  </p>
+                </div>
+                <div class="pause-cycle-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-cycle disabled"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-pause"
+                  >
+                    <i class="fas fa-pause"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="iJustinePics/ijustine_SurfaceProOne.jpg"
+                height="690px"
+                alt="Second slide"
+              />
+              <div class="carousel-caption">
+                <h1>Carousel Template with Bootstrap 4</h1>
+                <div class="description">
+                  <p>
+                    This is a free Carousel template made with the Bootstrap 4
+                    framework. Click on the buttons below to stop / start the
+                    autoplay:
+                  </p>
+                </div>
+                <div class="pause-cycle-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-cycle disabled"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-pause"
+                  >
+                    <i class="fas fa-pause"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="iJustinePics/ijustine_SwitchOne.jpg"
+                height="690px"
+                alt="Third slide"
+              />
+              <div class="carousel-caption">
+                <h1>Carousel Template with Bootstrap 4</h1>
+                <div class="description">
+                  <p>
+                    This is a free Carousel template made with the Bootstrap 4
+                    framework. Click on the buttons below to stop / start the
+                    autoplay:
+                  </p>
+                </div>
+                <div class="pause-cycle-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-cycle disabled"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-pause"
+                  >
+                    <i class="fas fa-pause"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="iJustinePics/ijustine_XboxOneXOne.jpg"
+                height="690 px"
+                alt="Second slide"
+              />
+              <div class="carousel-caption">
+                <h1>Carousel Template with Bootstrap 4</h1>
+                <div class="description">
+                  <p>
+                    This is a free Carousel template made with the Bootstrap 4
+                    framework. Click on the buttons below to stop / start the
+                    autoplay:
+                  </p>
+                </div>
+                <div class="pause-cycle-buttons">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-cycle disabled"
+                  >
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-customized btn-pause"
+                  >
+                    <i class="fas fa-pause"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <i class="fas fa-arrow-left fa-3x"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <i class="fas fa-arrow-right fa-3x"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="SocialMediaContainer">
+        <div id="logosOne">
+          <i class="fab fa-youtube fa-3x"></i
+          ><i class="fab fa-instagram fa-instagramOne fa-3x"></i>
+        </div>
+        <h1 id="SocialMediaHeader">
+          <span class="rainbow"> Social Media</span>
+        </h1>
+        <div id="logosTwo">
+          <i class="fab fa-twitter fa-3x"></i
+          ><i class="fab fa-snapchat-square fa-snapchat-squareOne fa-3x"></i>
+        </div>
+        <div class="flex-containerTwo">
+          <div class="InstaStats">
+            <i class="fab fa-instagram fa-instagramTwo fa-3x"></i>
+            <h2>Instagram</h2>
+            <div id="justineInstaFeed">
+              <script
+                src="https://apps.elfsight.com/p/platform.js"
+                defer
+              ></script>
+              <div
+                class="elfsight-app-559b2620-9246-4950-9bed-c52ea03e8e38"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-containerTwo">
+          <div class="TwitterStats">
+            <i class="fab fa-twitter fa-twitterTwo fa-3x"></i>
+            <h2>Twitter</h2>
+            <div id="TwitterFeed">
+              <a
+                class="twitter-timeline"
+                data-lang="en"
+                data-width="500"
+                data-height="542"
+                href="https://twitter.com/ijustine?ref_src=twsrc%5Etfw"
+                >Tweets by ijustine</a
+              >
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
+          </div>
+        </div>
+        <div class="flex-containerTwo">
+          <div class="YoutubeStats">
+            <i class="fab fa-youtube fa-youtubeTwo fa-3x"></i>
+            <h2>Youtube</h2>
+            <div id="YoutubeFeed">
+              <iframe
+                src="http://www.youtube.com/embed/?listType=user_uploads&list=ijustine"
+                width="480"
+                height="400"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="flex-containerTwo">
+          <div class="snapChatStats">
+            <i
+              class="fab fa-snapchat-square fa-snapchat-squareOneTwo fa-3x"
+            ></i>
+            <h2>SnapChat</h2>
+            <p>Click image to go to page with snapCode:</p>
+            <div id="snapChatFeed">
+              <a href="https://www.snapchat.com/add/ijustine" target="_blank"
+                ><img
+                  src="iJustinePics/ijustine_SnapCode.png"
+                  alt="Link to ijustine snapCode"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="FooterContainer">
+        
+        <!-- Footer --> 
+        <footer class="page-footer font-small mdb-color darken-3 pt-4">
+          <!-- Footer Elements -->
+          <div class="container">
+            <!--Grid row-->
+            <div class="FootLinks">
+              <h5>Nav Links</h5>
+              <a class="footLinksPosition" href="#"
+                ><i class="fas fa-home"></i><span>Home</span></a
+              >
+              <a class="footLinksPositionOne" href="#"
+                ><i class="fas fa-laptop"></i><span> More About iJustine</span></a
+              >
+              <a class="footLinksPositionTwo" href="#"
+                ><i class="fas fa-gamepad"></i><span>Mini Games</span></a
+              >
+              <a class="footLinksPositionThree" href="#"
+                ><i class="fab fa-instagram"></i><span>Social Media</span></a
+              >
+              <a class="footLinksPositionFour" href="#"
+                ><i class="fab fa-font-awesome"></i><span>Resources</span></a
+              >
+            </div>
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-md-6">
+                <!-- Video -->
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                  <iframe
+                    class="embed-responsive-item playControls"
+                    src="iJustineVideo/iJustine_Video.mp4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <!--Grid column-->
+              <div class="socialMediaButtons">
+                <h1>Social Media</h1>
+                <a class="YoutubeLink" href="http://www.youtube.com">
+                   <i class="fab fa-youtube fa-youtubeThree fa-2x"></i>
+                </a>
+                <a class="InstaLink" href="http://www.youtube.com">
+                  <i class="fab fa-instagram fa-instagramThree fa-2x"></i>
+                </a>
+                <a class="TwitterLink" href="http://www.youtube.com">
+                  <i class="fab fa-twitter fa-twitterThree fa-2x"></i>
+                </a>
+                <a class="SnapLink" href="http://www.youtube.com">
+                  <i class="fab fa-snapchat-ghost fa-snapGhost fa-2x"></i>
+                </a>
+              </div>
+              <div id="iJustineLogo">
+                <img src="iJustinePics/ijustine-logo.png" alt="iJustine Logo" />
+              </div>
+            </div>
+          
+            
+            
+            <!--Grid row-->
+          </div>
+          <!-- Footer Elements -->
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+    </div>
+
+    <!-- Modernizer(background clip text)-->
+    <script src="Modernizr/modernizr-custom.js"></script>
+    <!-- Google jQuery CDN and my external js file  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="iJustine.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <!--   <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="MDB-Free_4.15.0/js/jquery.min.js"
+    ></script>
+
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="MDB-Free_4.15.0/js/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="MDB-Free_4.15.0/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="MDB-Free_4.15.0/js/mdb.min.js"></script>
+  </body>
+</html>

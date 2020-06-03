@@ -1,0 +1,771 @@
+/* ijustine bio Font */
+@import url("https://fonts.googleapis.com/css?family=Bitter|Roboto+Mono&display=swap");
+
+/* Social Media Section Font */
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* border:2px solid red; */
+  height: 2100px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.bodyContainer {
+  overflow: hidden;
+}
+
+.BannerContainer {
+  z-index: 4;
+}
+
+.BannerContainer img {
+  width: 1600px;
+  height: 255px;
+}
+
+.navbar-brand {
+  color: lightblue;
+}
+.nav-link {
+  color: lightblue;
+  font-size: 13px;
+}
+
+.nav-link:hover {
+  color: #e83e8c;
+}
+
+#itemColor a {
+  color: lightblue;
+}
+
+#itemTwoColor a {
+  color: lightblue;
+}
+
+#itemThreeColor a {
+  color: lightblue;
+}
+
+#itemFourColor a {
+  color: lightblue;
+}
+
+#ButtonOutline {
+  position: relative;
+  right:20px;
+  font-size: 9px;
+  border-color: #924269;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+}
+
+#SearchStyle {
+  position: relative;
+  top: 1px;
+  right: 55px;
+}
+
+/* Search Button Customization */
+.btnMain {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Blue */
+
+#ButtonOutline:hover {
+  background: lightblue;
+  color: white;
+}
+
+/* Just in case for the need to override box-sizing issue */
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+/* Image Responsiveness */
+@media only screen and (max-width: 1400px) {
+  .BannerContainer img {
+    width: 1470px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .BannerContainer img {
+    width: 1370px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .BannerContainer img {
+    width: 1270px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .BannerContainer img {
+    width: 1170px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .BannerContainer img {
+    width: 1070px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .BannerContainer img {
+    width: 970px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .BannerContainer img {
+    width: 870px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .BannerContainer img {
+    width: 770px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .BannerContainer img {
+    width: 670px;
+    height: 255px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .BannerContainer img {
+    width: 570px;
+  }
+}
+
+/* Nav Responsiveness */
+@media only screen and (min-width: 1500px) {
+  .nav-link {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  .HomePad {
+    margin-left: 30px;
+  }
+  .BannerContainer img {
+    width: 1530px;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .nav-link {
+    margin-right: 9px;
+  }
+}
+
+@media only screen and (min-width: 1116px) {
+  .nav-link {
+    margin-right: 35px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .nav-link {
+    margin-right: 75px;
+  }
+}
+
+@media only screen and (min-width: 1474px) {
+  .nav-link {
+    margin-right: 105px;
+  }
+}
+
+.navColor {
+  background-color: #e83e8c;
+}
+
+/* nav stuff */
+/* Moves nav down */
+.NavContainer {
+  height: 100%;
+  position: relative;
+  animation: mymove 5s;
+  -webkit-animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 206px;
+  }
+}
+
+/* allows for the flip of banner image */
+
+.spin {
+  height: 50px;
+  width: 50px;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  animation-name: rotation;
+  animation-delay: 0s;
+  animation-duration: 6s;
+  transition-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.dropdown-color div {
+  background-color: #e83e8c;
+}
+.dropdown-color a {
+  background-color: #e83e8c;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
+}
+
+/* flex stuff */
+.flex-containerOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.ijustineBio {
+  position: relative;
+  top: 240px;
+  /* border: 2px solid #e83e8c; */
+  border-bottom: 12px ridge #e83e8c;
+  /* height: 500px; */
+}
+
+.BioStyle {
+  font-family: "Bitter", serif;
+  margin-left: 60px;
+  margin-top: 25px;
+}
+
+.ijustineBio img {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 100px;
+  left: 30px;
+}
+
+#BioImageStyle img {
+  border: 16px ridge #e83e8c;
+}
+
+#BioTextStyle {
+  position: relative;
+  border: 8px double #e83e8c;
+  left: 80px;
+  width: 1100px;
+  /* height: 485px; */
+  top: -10px;
+}
+
+.repeating-before {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+.repeating-before li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+  margin-top: 18px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+.repeating-before li:nth-child(3n + 1)::before {
+  content: "🤠 ";
+}
+
+.repeating-before li:nth-child(3n + 2)::before {
+  content: "👩‍💻 ";
+}
+
+.repeating-before li:nth-child(3n)::before {
+  content: "🎮 ";
+}
+
+/* Bootstrap carousel CSS */
+.fa-arrow-left,
+.fa-arrow-right {
+  color: red;
+}
+
+.CarouselContainer {
+  margin-top: 240px;
+  border-bottom: 12px ridge #e83e8c;
+  text-align: center;
+}
+
+.flex-containerTwo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 100px;
+}
+
+#SocialMediaHeader {
+  position: relative;
+  bottom: 30px;
+  left: 640px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  /* border:1px solid red; */
+  width: 250px;
+}
+
+/* Rainbow Text CSS */
+.rainbowize {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #f22),
+    color-stop(0.15, #f2f),
+    color-stop(0.3, #22f),
+    color-stop(0.45, #2ff),
+    color-stop(0.6, #2f2),
+    color-stop(0.75, #2f2),
+    color-stop(0.9, #ff2),
+    color-stop(1, #f22)
+  );
+  background-image: gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0, #f22),
+    color-stop(0.15, #f2f),
+    color-stop(0.3, #22f),
+    color-stop(0.45, #2ff),
+    color-stop(0.6, #2f2),
+    color-stop(0.75, #2f2),
+    color-stop(0.9, #ff2),
+    color-stop(1, #f22)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* if rainbow isn't supported by a browser */
+.rainbowize h1 {
+  color: orange;
+}
+
+/* Social Media Logo Colors */
+.fa-instagramOne {
+  color: #c13584;
+  margin-left: 40px;
+}
+
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-youtube {
+  color: #c4302b;
+}
+
+.fa-snapchat-squareOne {
+  color: rgb(255, 252, 0);
+  margin-left: 40px;
+}
+
+.SocialMediaContainer {
+  border-bottom: 12px ridge #e83e8c;
+  height: 1700px;
+  overflow: hidden;
+}
+
+#logosOne {
+  position: relative;
+  left: 480px;
+  top: 17px;
+  /* border:1px solid green; */
+  width: 150px;
+}
+
+#logosTwo {
+  position: relative;
+  left: 910px;
+  bottom: 85px;
+}
+
+.InstaStats {
+  position: relative;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  border: 12px groove #e83e8c;
+  color: #c13584;
+  bottom: 30px;
+  width: 550px;
+  /* height:630px; */
+}
+
+.InstaStats h2 {
+  font-size: 40px;
+}
+
+.fa-instagramTwo {
+  position: absolute;
+  color: #c13584;
+  right: 385px;
+}
+
+#justineInstaFeed {
+  position: relative;
+  left: 15px;
+}
+
+.TwitterStats {
+  position: relative;
+  left: 780px;
+  bottom: 660px;
+  text-align: center;
+  border: 12px groove #00acee;
+  width: 550px;
+  height: 630px;
+}
+.TwitterStats h2 {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: #00acee;
+}
+
+.fa-twitterTwo {
+  position: absolute;
+  left: 130px;
+}
+
+.YoutubeStats h2 {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: #c4302b;
+}
+
+.YoutubeStats {
+  position: relative;
+  bottom: 450px;
+  text-align: center;
+  border: 12px groove #c4302b;
+  width: 550px;
+  height: 630px;
+}
+
+.fa-youtubeTwo {
+  position: absolute;
+  left: 100px;
+}
+
+.fa-snapchat-squareOneTwo {
+  position: absolute;
+  color: rgb(255, 252, 0);
+  left: 110px;
+}
+
+.snapChatStats {
+  position: relative;
+  left: 780px;
+  bottom: 1085px;
+  text-align: center;
+  border: 12px groove rgb(255, 252, 0);
+  width: 550px;
+  height: 630px;
+}
+
+.snapChatStats h2 {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: rgb(255, 252, 0);
+}
+
+.snapChatStats p {
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  color: rgb(255, 252, 0);
+}
+
+/* Facts Container Content Styling */
+.FactsContainer {
+  border: 2px solid red;
+  text-align: center;
+}
+
+/* Footer */
+.FooterContainer {
+  border-bottom: 12px ridge #e83e8c;
+  overflow: hidden;
+}
+
+.embed-responsive {
+  position: relative;
+  bottom: 250px;
+  left: 250px;
+}
+
+.container {
+  height: 300px;
+}
+.FootLinks {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  border: 9px ridge #e83e8c;
+  width: 210px;
+  height: 240px;
+  text-align: center;
+  color: #e83e8c;
+}
+
+.FootLinks h5 {
+  position: relative;
+  top: 10px;
+}
+.FootLinks a {
+  display: block;
+}
+
+.FootLinks span:hover {
+  text-decoration: underline;
+  color: #e83e8c;
+}
+
+.footLinksPosition {
+  position: relative;
+  top: 10px;
+}
+
+.footLinksPosition span {
+  color: #00acee;
+  margin-right: 5px;
+}
+
+.footLinksPositionOne {
+  position: relative;
+  top: 20px;
+}
+
+.footLinksPositionOne span {
+  color: #00acee;
+  margin-left: 7px;
+}
+
+.footLinksPositionTwo {
+  position: relative;
+  top: 30px;
+}
+
+.footLinksPositionTwo span {
+  color: #00acee;
+  margin-left: 10px;
+}
+
+.footLinksPositionThree {
+  position: relative;
+  top: 40px;
+}
+
+.footLinksPositionThree span {
+  color: #00acee;
+  margin-left: 10px;
+}
+
+.footLinksPositionFour {
+  position: relative;
+  top: 50px;
+}
+
+.footLinksPositionFour span {
+  color: #00acee;
+  margin-left: 10px;
+}
+
+.fa-home {
+  margin-right: 10px;
+}
+
+#iJustineLogo {
+  position: relative;
+  right: 1200px;
+  bottom: 235px;
+}
+
+.socialMediaButtons {
+  /* border: 1px solid red; */
+  position: relative;
+  left: 240px;
+  bottom: 210px;
+  z-index: 20;
+  height: 270px;
+  width: 450px;
+  text-align: center;
+}
+
+.socialMediaButtons h1 {
+  color: #e83e8c;
+}
+
+.socialMediaButtons div {
+  display: inline-block;
+}
+
+.YoutubeLink {
+  display: block;
+  position: relative;
+  border: 1px solid red;
+  width: 70px;
+  height: 70px;
+  top: 30px;
+  left: 20px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -ms-border-radius: 200px 200px 200px 200px;
+  -o-border-radius: 200px 200px 200px 200px;
+  background-color: black;
+}
+
+.YoutubeLink:hover {
+  top: 20px;
+  box-shadow: -1px 5px 5px 0px red;
+  -moz-box-shadow: -1px 5px 5px 0px red;
+  -webkit-box-shadow: -1px 5px 5px 0px red;
+  -o-box-shadow: -1px 25px 5px 0px red;
+}
+
+.fa-youtubeThree {
+  position: absolute;
+  left: 17px;
+  top: 18px;
+  color: red;
+}
+
+.InstaLink {
+  display: block;
+  position: relative;
+  border: 1px solid purple;
+  width: 70px;
+  height: 70px;
+  top: -37px;
+  left: 130px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -ms-border-radius: 200px 200px 200px 200px;
+  -o-border-radius: 200px 200px 200px 200px;
+  background-color: purple;
+}
+
+.InstaLink:hover {
+  top: -47px;
+  box-shadow: -1px 5px 5px 0px #d22a76;
+  -moz-box-shadow: -1px 5px 5px 0px #d22a76;
+  -webkit-box-shadow: -1px 5px 5px 0px #d22a76;
+  -o-box-shadow: -1px 25px 5px 0px #d22a76;
+}
+
+.fa-instagramThree {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  color: white;
+}
+
+.TwitterLink {
+  display: block;
+  position: relative;
+  border: 1px solid #00acee;
+  width: 70px;
+  height: 70px;
+  top: -107px;
+  left: 240px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -ms-border-radius: 200px 200px 200px 200px;
+  -o-border-radius: 200px 200px 200px 200px;
+  background-color: #00acee;
+}
+
+.TwitterLink:hover {
+  top: -117px;
+  box-shadow: -1px 5px 5px 0px #00adef;
+  -moz-box-shadow: -1px 5px 5px 0px #00adef;
+  -webkit-box-shadow: -1px 5px 5px 0px #00adef;
+  -o-box-shadow: -1px 25px 5px 0px #00adef;
+}
+
+.fa-twitterThree {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  color: white;
+}
+
+.SnapLink {
+  display: block;
+  position: relative;
+  border: 1px solid #f7f700;
+  width: 70px;
+  height: 70px;
+  top: -177px;
+  left: 350px;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -ms-border-radius: 200px 200px 200px 200px;
+  -o-border-radius: 200px 200px 200px 200px;
+  background-color: #f7f700;
+}
+
+.SnapLink:hover {
+  top: -187px;
+  box-shadow: -1px 5px 5px 0px white;
+  -moz-box-shadow: -1px 5px 5px 0px white;
+  -webkit-box-shadow: -1px 5px 5px 0px white;
+  -o-box-shadow: -1px 25px 5px 0px white;
+}
+
+.fa-snapGhost {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  color: black;
+}
